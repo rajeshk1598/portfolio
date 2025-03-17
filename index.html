@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rajesh Konda</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <header class="top-nav">
+        <div class="profile-inline">
+            <img src="images/image2.jpg" alt="Rajesh Profile" class="profile-pic-small" />
+            <div class="name-role">
+                <h2>Rajesh Konda</h2>
+                <p>Cloud & Network Engineer</p>
+            </div>
+        </div>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="home-content">
+            <h1>Network Engineer</h1>
+            <p>I'm happy to welcome you to my personal portfolio website!</p>
+        </div>
+    </section>
+
+
+    <!-- About Me Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>
+            <i class="fas fa-user" style="margin-right: 10px;"></i> About Me
+        </h2>
+    
+        <div class="about-description">
+            <p>
+                Hello, I'm <strong>Rajesh Konda</strong>, a passionate <strong>Cloud & Network Engineer</strong> with over four years of experience architecting, deploying, and securing enterprise-grade network infrastructures.
+              </p>
+              <p>
+                My expertise spans across <strong>Cisco routing and switching</strong>, <strong>Fortinet firewalls</strong>, <strong>SD-WAN</strong> technologies, and <strong>cloud networking in Microsoft Azure</strong>. I'm well-versed in core routing protocols like <strong>BGP</strong>, <strong>OSPF</strong>, and <strong>EIGRP</strong> to ensure optimal WAN/LAN performance and reliability.
+              </p>
+              <p>
+                During my time at <strong>Cloud Matrix</strong>, I led the management of a globally distributed network across 100+ locations, prioritizing high availability and security. I also drove automation initiatives using <strong>Python</strong> and <strong>Ansible</strong> to streamline network operations and improve operational efficiency.
+              </p>
+              <p>
+                I'm a certified <strong>CCNA</strong> professional and currently working toward <strong>FCA</strong> and <strong>CISSP</strong> certifications. With a continuous drive to grow, I’m always exploring emerging trends in <strong>network security</strong>, <strong>cloud infrastructure</strong>, and <strong>automation</strong> to stay ahead in the field.
+            </p>
+        </div>
+    
+        <!-- Social Links -->
+        <div class="about-links">
+            <a href="https://www.linkedin.com/in/rajesh-konda" target="_blank" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/rajeshkonda" target="_blank" class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Skills Modal -->
+    <div id="skillsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-skills">&times;</span>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>Routing – BGP, OSPF, EIGRP</li>
+                        <li>Switching – VLAN, STP, EtherChannel</li>
+                        <li>Wireless – Cisco Meraki, Aruba, RADIUS</li>
+                        <li>Load Balancing – F5, Nginx, Azure Load Balancer</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Security</h3>
+                    <ul>
+                        <li>Firewalls – Fortinet, Cisco ASA, Palo Alto</li>
+                        <li>Web Security – Proxy, IDS/IPS, Zero Trust</li>
+                        <li>Mail Security – Spam Filtering, Email Encryption</li>
+                        <li>Monitoring – Wireshark, SNMP, NetFlow, PRTG</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & Virtualization</h3>
+                    <ul>
+                        <li>Azure Networking, AWS VPC</li>
+                        <li>Virtualization – VMware, Hyper-V, Azure VMs</li>
+                        <li>Windows Server – Active Directory, DHCP, DNS</li>
+                        <li>Linux Server – Ubuntu, CentOS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Automation & Tools</h3>
+                    <ul>
+                        <li>Python, Ansible, Terraform</li>
+                        <li>Monitoring – SolarWinds, PRTG</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Modal -->
+    <div id="experienceModal" class="modal">
+        <div class="modal-content">
+        <span class="close-experience">&times;</span>
+        <h2><i class="fas fa-briefcase" style="margin-right: 10px;"></i> Experience</h2>
+    
+        <div class="experience-description">
+            <!-- Job 1 -->
+            <div class="experience-card">
+            <h3>Cloud & Network Engineer <span class="company">@ Cloud Matrix</span></h3>
+            <ul>
+                <li>Designed and managed WAN/LAN networks across 100+ global locations.</li>
+                <li>Configured Cisco routers and switches to enhance performance & security.</li>
+                <li>Implemented BGP, OSPF, and EIGRP protocols for seamless data flow.</li>
+                <li>Managed Fortinet firewalls and FortiManager to ensure compliance.</li>
+                <li>Integrated SD-WAN solutions across cloud and on-premise networks.</li>
+                <li>Configured Azure VPNs, ExpressRoute, and firewall integration.</li>
+                <li>Led network security enforcement, reducing cyber threats.</li>
+                <li>Troubleshot complex issues using Wireshark, SNMP, NetFlow.</li>
+                <li>Collaborated with global teams and vendors for expansion.</li>
+                <li>Reduced costs through network optimization and resource planning.</li>
+            </ul>
+            </div>
+    
+            <!-- Job 2 -->
+            <div class="experience-card">
+            <h3>Network Engineer <span class="company">@ Amazon</span> <span class="date">(06/2019 – 08/2022)</span></h3>
+            <ul>
+                <li>Deployed and maintained Cisco switches, routers, and firewalls.</li>
+                <li>Monitored WAN/LAN connectivity across 50+ corporate sites.</li>
+                <li>Configured Meraki wireless for scalable Wi-Fi solutions.</li>
+                <li>Troubleshot VPN & SD-WAN issues ensuring remote access.</li>
+                <li>Improved firewall policy & cloud networking compliance.</li>
+                <li>Worked with Azure (ExpressRoute, VPN) and AWS (VPCs, subnets).</li>
+                <li>Integrated hybrid cloud with AWS & Azure.</li>
+                <li>Used Wireshark, SolarWinds for network diagnostics.</li>
+                <li>Built Python scripts for task automation.</li>
+                <li>Created technical documentation & supported DR planning.</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content resume-modal">
+            <span class="close-resume">&times;</span>
+            <h2><i class="fas fa-file-alt" style="margin-right: 10px;"></i> My Resume</h2>
+
+            <!-- Resume Preview and Download Button -->
+            <div class="resume-container">
+                <iframe id="resumeFrame" src="" frameborder="0"></iframe>
+                <a id="resumeDownload" href="" download class="download-btn">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Modal -->
+    <div id="projectsModal" class="modal">
+        <div class="modal-content projects-modal">
+        <span class="close-projects">&times;</span>
+        <h2><i class="fas fa-project-diagram" style="margin-right: 10px;"></i> Projects & Certifications</h2>
+    
+        <div class="projects-section">
+            <!-- Project 1 -->
+            <div class="project-card">
+            <h3>Enterprise SD-WAN Deployment</h3>
+            <ul>
+                <li>Designed and implemented SD-WAN across 50+ global offices.</li>
+                <li>Configured BGP & OSPF for WAN & Azure cloud connectivity.</li>
+                <li>Integrated Fortinet firewalls & Meraki wireless for secure access.</li>
+                <li>Improved app performance by 40% and reduced latency by 30%.</li>
+            </ul>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+            <h3>Firewall & Network Security Enhancement</h3>
+            <ul>
+                <li>Created enterprise-wide firewall policies using Fortinet & ASA.</li>
+                <li>Automated rule audits using Python for compliance.</li>
+                <li>Deployed VPN + IDS/IPS for 2,000+ employees.</li>
+                <li>Reduced security incidents by 60% in 6 months.</li>
+            </ul>
+            </div>
+    
+            <!-- Certifications -->
+            <div class="certifications">
+            <h3>Certifications (Completed & In Progress)</h3>
+            <ul>
+                <li>CCNA – Cisco Certified Network Associate ✅</li>
+                <li>Google Network Engineer ✅</li>
+                <li>FCA – Fortinet Certified Associate (In Progress)</li>
+                <li>CompTIA Network+ (In Progress)</li>
+                <li>CISSP – Certified Information Systems Security Professional (In Progress)</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content contact-modal">
+        <span class="close-contact">&times;</span>
+        <h2><i class="fas fa-address-book" style="margin-right: 10px;"></i> Contact Information</h2>
+    
+        <div class="contact-info">
+            <p><strong>Name:</strong> Rajesh Konda</p>
+            <p><strong>Phone:</strong> +1 475-227-7074</p>
+            <p><strong>Email:</strong> <a href="mailto:Kondarajesh9999@gmail.com">Kondarajesh9999@gmail.com</a></p>
+    
+            <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/rajesh-konda" target="_blank" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/rajeshkonda" target="_blank" class="social-icon" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+  
+  
+  
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Rajesh Konda. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

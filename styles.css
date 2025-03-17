@@ -1,0 +1,497 @@
+/* -------------------------------
+   General Reset and Body Styling
+---------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* -------------------------------
+   Top Navigation Styling
+---------------------------------- */
+.top-nav {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Profile Info on Left */
+.profile-inline {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic-small {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #ffffff;
+}
+
+.name-role h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.name-role p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Navigation Menu */
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.top-menu a:hover {
+    background-color: #ffffff;
+    color: #1e1e2f;
+    border-radius: 4px;
+}
+
+/* -------------------------------
+   Hero Section Styling
+---------------------------------- */
+#home {
+    background-image: url("images/image1.jpg");
+    background-size: cover;
+    background-position: center 65%;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* -------------------------------
+   Footer Styling
+---------------------------------- */
+footer {
+    text-align: center;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* -------------------------------
+   Modal Common Styling
+---------------------------------- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.close,
+.close-skills {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close-skills:hover {
+    color: #000;
+}
+
+/* -------------------------------
+   SKILLS POPUP CUSTOM STYLING
+---------------------------------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: #1e1e2f;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #4caf50;
+}
+
+.skill-category ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* -------------------------------
+   ABOUT ME DESCRIPTION BLOCK
+---------------------------------- */
+.about-description {
+    background-color: #f9f9f9;
+    border-left: 5px solid #0077b5;
+    padding: 20px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-description p {
+    margin-bottom: 15px;
+}
+
+.about-description strong {
+    color: #1e1e2f;
+}
+
+/* -------------------------------
+   SOCIAL ICONS FOR ABOUT ME
+---------------------------------- */
+.about-links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 28px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #0077b5;
+}
+
+/* -------------------------------
+   EXPERIENCE MODAL STYLING
+---------------------------------- */
+.experience-description {
+    margin-top: 25px;
+}
+
+.experience-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #0077b5;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.experience-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1e1e2f;
+}
+
+.experience-card .company {
+    font-weight: normal;
+    color: #0077b5;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.experience-card .date {
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #555;
+    margin-left: 8px;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.experience-card ul li {
+    margin-bottom: 8px;
+}
+
+/* Close Button for Experience Modal */
+.close-experience {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-experience:hover {
+    color: #000;
+}
+
+/* -------------------------------
+   RESUME MODAL STYLING
+---------------------------------- */
+.resume-modal h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-container iframe {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.download-btn {
+    background-color: #0077b5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
+
+.download-btn:hover {
+    background-color: #005f91;
+}
+
+/* Close Button */
+.close-resume {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-resume:hover {
+    color: #000;
+}
+
+/* -------------------------------
+   PROJECTS MODAL STYLING
+---------------------------------- */
+.projects-modal h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects-section {
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #0077b5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #1e1e2f;
+}
+
+.project-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.certifications h3 {
+    color: #0077b5;
+    margin-top: 25px;
+}
+
+.certifications ul {
+    padding-left: 20px;
+    list-style-type: circle;
+    color: #333;
+}
+
+.close-projects {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-projects:hover {
+    color: #000;
+}
+
+/* -------------------------------
+   CONTACT MODAL STYLING
+---------------------------------- */
+.contact-modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-info {
+    background-color: #f9f9f9;
+    padding: 20px 25px;
+    border-left: 5px solid #0077b5;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  
+  .contact-info p {
+    margin-bottom: 12px;
+  }
+  
+  .contact-info a {
+    color: #0077b5;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-icons {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .contact-icons .social-icon {
+    margin: 0 10px;
+    font-size: 28px;
+    color: #333;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .contact-icons .social-icon:hover {
+    transform: scale(1.2);
+    color: #0077b5;
+  }
+  
+  /* Close Button */
+  .close-contact {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-contact:hover {
+    color: #000;
+  }
+  
